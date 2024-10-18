@@ -115,7 +115,7 @@ footer {
 }
 
 .current-temp-value {
-  font-size: 80px;
+  font-size: 90px;
   font-weight: bold;
   color: maroon;
   line-height: 1;
@@ -125,7 +125,7 @@ footer {
   display: block;
   align-self: flex-start;
   margin-left: 5px;
-  transform: translateY(-10px);
+  transform: translateY(5px);
 }
 
 .weather-app {
