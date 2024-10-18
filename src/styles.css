@@ -68,21 +68,16 @@ footer {
   border-radius: 15px;
 }
 
-.current-info-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  margin-bottom: 10px;
-}
-
 .current-city-details {
   justify-content: left;
 }
 
 .current-city {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #6e2019;
+  font-size: 46px;
+  font-weight: 900;
+  margin: 0;
+  color: maroon;
+  margin-top: 52px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
@@ -104,8 +99,10 @@ footer {
 }
 
 .weather-app-current-container {
+  float: right;
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .current-temp {
@@ -126,15 +123,18 @@ footer {
 }
 
 .current-temp-value {
-  font-size: 4rem;
-  font-weight: 700;
-  color: #6e2019;
+  font-size: 90px;
+  font-weight: bold;
+  color: maroon;
   line-height: 1;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 .current-temp-unit {
-  font-size: 1.5rem;
+  font-size: 32px;
+  display: block;
+  align-self: flex-start;
   margin-left: 5px;
+  transform: translateY(5px);
 }
 
 .weather .roboto-thin {
