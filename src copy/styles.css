@@ -1,0 +1,209 @@
+body {
+  font-family: "Roboto";
+}
+
+header {
+  border-bottom: 1px solid #ffff;
+  padding-bottom: 30px;
+  display: block;
+  unicode-bidi: isolate;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+  unicode-bidi: isolate;
+}
+
+main {
+  padding: 20px 0;
+}
+
+a {
+  color: tan;
+}
+
+footer {
+  border-top: 1px solid #fff;
+  padding: 12px 0 0 0;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.weather-app {
+  background: antiquewhite;
+  margin: 60px auto;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.search-input {
+  background-color: white;
+  border: none;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  padding: 25px;
+  width: 98.4%;
+  border-radius: 13px;
+}
+.search-button {
+  margin-left: -98px;
+  font-size: 16px;
+  background-color: tan;
+  color: white;
+  border: none;
+  padding: 18px;
+  line-height: 1;
+  border-radius: 15px;
+}
+
+.current-city-details {
+  justify-content: left;
+}
+
+.current-city {
+  font-size: 38px;
+  font-weight: 900;
+  margin: 0;
+  color: maroon;
+}
+
+.current-details {
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.current-details b {
+  color: burlywood;
+  font-size: 21px;
+}
+
+.current-details strong {
+  color: burlywood;
+  font-size: 14px;
+}
+
+.weather-app-current-container {
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.current-temp {
+  font-size: 48px;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.current-weather {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.current-temp-icon {
+  margin-right: 5px;
+  height: 75px;
+}
+
+.current-temp-value {
+  font-size: 80px;
+  font-weight: bold;
+  color: maroon;
+  line-height: 1;
+}
+.current-temp-unit {
+  font-size: 32px;
+  display: block;
+  align-self: flex-start;
+  margin-left: 5px;
+  transform: translateY(-10px);
+}
+
+.weather-app {
+  max-width: 575px;
+  margin: 30px auto;
+  padding: 30px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  border-radius: 12px;
+}
+
+.weather .roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
