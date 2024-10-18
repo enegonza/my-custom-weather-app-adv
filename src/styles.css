@@ -1,5 +1,8 @@
 body {
   font-family: "Roboto";
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -16,7 +19,7 @@ form {
 }
 
 main {
-  padding: 20px 0;
+  flex: 1;
 }
 
 a {
@@ -24,22 +27,25 @@ a {
 }
 
 footer {
-  border-top: 1px solid #fff;
-  padding: 12px 0 0 0;
+  text-align: center;
+  padding: 15px;
   font-size: 13px;
   color: rgba(0, 0, 0, 0.6);
-  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #fff;
 }
 
 .weather-app {
-  background: antiquewhite;
-  margin: 60px auto;
-  padding: 15px;
-  border-radius: 10px;
+  max-width: 575px;
+  margin: 30px auto;
+  padding: 30px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  border-radius: 12px;
+  background: antiquewhite;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 100%;
 }
 
 .search-input {
@@ -126,14 +132,6 @@ footer {
   align-self: flex-start;
   margin-left: 5px;
   transform: translateY(5px);
-}
-
-.weather-app {
-  max-width: 575px;
-  margin: 30px auto;
-  padding: 30px;
-  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
-  border-radius: 12px;
 }
 
 .weather .roboto-thin {
