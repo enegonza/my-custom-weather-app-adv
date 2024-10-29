@@ -81,8 +81,32 @@ function chngCity(event) {
   }
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Tue", "Wed", "Thur", "Fri", "Sat"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `  
+        <div class="weather-forecast-row-col">
+          <div class="weather-forecast-row-col-day"> ${day} </div>
+          <div class="weather-forecast-row-col-icon"> 🌤️ </div>
+          <div class="weather-forecast-row-col-temps">
+            <div class="weather-forecast-temp"><strong>15°</strong></div>
+            <div class="weather-forecast-temp">9°</div>
+          </div>
+        `;
+  });
+  forecastElement.innerHTML = forecastHtml;
+}
+
 let defaultCity = "Gaza";
 retrieveWeather(defaultCity);
+
+displayForecast();
 
 let form = document.querySelector("#city-form");
 if (form) {
