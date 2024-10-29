@@ -49,7 +49,6 @@ function updatedCity(response) {
   let longitude = response.data.coordinates.longitude;
   retrieveForecast(latitude, longitude);
 }
-
 function retrieveForecast(lat, lon) {
   let forecastApiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${lon}&lat=${lat}&key=e5d23o984ba0b21973288194ctbda24f`;
   axios.get(forecastApiUrl).then(displayForecast);
