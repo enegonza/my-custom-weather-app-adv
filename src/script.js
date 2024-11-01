@@ -48,6 +48,8 @@ function updatedCity(response) {
   let latitude = response.data.coordinates.latitude;
   let longitude = response.data.coordinates.longitude;
   retrieveForecast(latitude, longitude);
+
+  displayForecast(response.data.city);
 }
 function retrieveForecast(lat, lon) {
   let forecastApiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${lon}&lat=${lat}&key=e5d23o984ba0b21973288194ctbda24f`;
@@ -95,9 +97,10 @@ function displayForecast() {
           <div class="weather-forecast-row-col-day"> ${day} </div>
           <div class="weather-forecast-row-col-icon"> 🌤️ </div>
           <div class="weather-forecast-row-col-temps">
-            <div class="weather-forecast-temp"><strong>15°</strong></div>
-            <div class="weather-forecast-temp">9°</div>
+          <div class="weather-forecast-temp"><strong>15°</strong></div>
+          <div class="weather-forecast-temp">9°</div>
           </div>
+        </div>
         `;
   });
   forecastElement.innerHTML = forecastHtml;
@@ -105,8 +108,6 @@ function displayForecast() {
 
 let defaultCity = "Gaza";
 retrieveWeather(defaultCity);
-
-displayForecast();
 
 let form = document.querySelector("#city-form");
 if (form) {
