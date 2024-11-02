@@ -54,7 +54,10 @@ function retrieveForecast(city) {
   axios.get(forecastApiUrl).then(displayForecast);
 }
 
-function formatDate(date) {
+function formatDate(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let days = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"];
+
   return days[date.getDay()];
 }
 
@@ -93,9 +96,9 @@ function displayForecast(response) {
         forecastHtml +
         `  
         <div class="weather-forecast-row-col">
-          <div class="weather-forecast-row-col-day">${
-            days[new Date(day.time * 1000).getDay()]
-          }</div>
+          <div class="weather-forecast-row-col-day">${formatDate(
+            day.time
+          )}</div>
           <div class="weather-forecast-row-col-icon"> <img src = "${
             day.condition.icon_url
           }"> </div>
