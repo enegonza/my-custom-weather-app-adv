@@ -50,7 +50,7 @@ function updatedCity(response) {
   displayForecast(response.data.city);
 }
 function retrieveForecast(city) {
-  let forecastApiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=e5d23o984ba0b21973288194ctbda24f`;
+  let forecastApiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=e5d23o984ba0b21973288194ctbda24f&units=imperial`;
   axios.get(forecastApiUrl).then(displayForecast);
 }
 
